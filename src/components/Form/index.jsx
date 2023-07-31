@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 import "./styles.css";
 
 export const Form = ({ listTransactions, setListTransactions }) => {
@@ -32,6 +31,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
         <input
           className="form__input"
           type="text"
+          value={form.title}
           onChange={(event) => setForm({ ...form, title: event.target.value })}
           placeholder="Digite aqui sua descrição"
         ></input>
@@ -46,6 +46,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
             <input
               className="inputValueNumber__input"
               type="number"
+              value={form.value}
               onChange={(event) =>
                 setForm({ ...form, value: event.target.value })
               }
@@ -58,6 +59,7 @@ export const Form = ({ listTransactions, setListTransactions }) => {
           <h1 className="inputSelect__title">Tipo de Valor</h1>
           <select
             className="inputSelect__select"
+            value={form.valueType}
             onChange={(event) =>
               setForm({ ...form, valueType: event.target.value })
             }
