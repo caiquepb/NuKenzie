@@ -1,0 +1,33 @@
+.sectionPage__container {
+  display: flex;
+  flex-direction: column;
+
+  width: 90%;
+  margin: 0 5%;
+}
+
+.sectionPage__title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 30px;
+
+  color: #212529;
+
+  padding-bottom: 32px;
+}
+
+.fullList__container {
+    overflow-y: auto;
+    max-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+@media (min-width: 1024px) {
+  .sectionPage__container {
+     width: 100%;
+  }
+}

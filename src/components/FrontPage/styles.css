@@ -1,0 +1,89 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: #212529;
+}
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+
+  width: 90%;
+
+  padding-top: 15%;
+}
+.section__box {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+
+  width: 100%;
+}
+.section__title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.375rem;
+  line-height: 48px;
+
+  color: #ffffff;
+}
+.section__paragraph {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+.section__button {
+  height: 48px;
+  width: 100%;
+
+  background: #fd377e;
+
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.frontPageImage{
+  width: 70%;
+  height: 70%;
+}
+
+
+@media (min-width: 1024px) {
+  .main__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .section__container {
+    padding-top: 0;
+    max-width: 347px;
+
+  }
+
+  .frontPageImage{
+    max-width: 593px;
+    max-height: 593px;
+  }
+}
